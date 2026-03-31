@@ -1,4 +1,3 @@
-import React from 'react';
 import { Play, ShieldAlert, ShieldCheck, Clock, FileWarning } from 'lucide-react';
 import { motion } from 'framer-motion';
 

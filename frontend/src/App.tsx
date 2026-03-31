@@ -4,7 +4,6 @@ import { SocketProvider } from './context/SocketContext';
 import { AuthPage } from './pages/AuthPage';
 import { Dashboard } from './pages/Dashboard';
 import { ProtectedRoute } from './components/ProtectedRoute';
-import React from 'react';
 
 function App() {
   return (
