@@ -14,10 +14,10 @@ connectDB();
 const app = express();
 const httpServer = createServer(app);
 export const io = new Server(httpServer, {
-  cors: { origin: process.env.FRONTEND_URL || '*', methods: ['GET', 'POST'] }
+  cors: { origin: '*', methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'] }
 });
 
-app.use(cors({ origin: process.env.FRONTEND_URL || '*' }));
+app.use(cors({ origin: '*', methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'] }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
